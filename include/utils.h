@@ -106,9 +106,6 @@ inline namespace utils {
         InputSequence() {}
         InputSequence(std::initializer_list<Input> il) : std::vector<Input>(il) {}
 
-        //template<typename... Args>
-        //Model(Args&&... args) : model(std::forward<Args>(args)...) {}
-
         // constructs a random sequence of inputs with a specified length.
         InputSequence(random_tag, time_t length)
         {
